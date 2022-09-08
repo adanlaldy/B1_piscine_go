@@ -3,7 +3,6 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintComb() {
-
 	for a := 0; a != 10; a++ {
 		for b := 1; b != 10; b++ {
 			for c := 2; c != 10; c++ {
