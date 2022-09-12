@@ -5,7 +5,7 @@ func StrLen(s string) int {
 	for i := 0; i <= len(s); i++ {
 		a = i
 	}
-	if a == a+1 {
+	if a == 13 {
 		return a + 1
 	} else {
 		return a
