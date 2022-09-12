@@ -7,11 +7,9 @@ func StrLen(s string) int {
 	}
 	if a == 13 {
 		return a + 1
-	}
-	else if a == 25{
+	} else if a == 25 {
 		return 25
-	}
-	else {
+	} else {
 		return a
 	}
 }
