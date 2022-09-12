@@ -18,7 +18,7 @@ func PrintNbr(n int) {
 	}
 	if nb > 0 {
 		z01.PrintRune(rune(49))
-		z01.PrintRune(rune(50))cd
+		z01.PrintRune(rune(50))
 		z01.PrintRune(rune(51))
 	}
 }
