@@ -3,16 +3,16 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintStr(s string) {
-	z01.PrintRune(rune(72))
-	z01.PrintRune(rune(101))
-	z01.PrintRune(rune(108))
-	z01.PrintRune(rune(108))
-	z01.PrintRune(rune(111))
-	z01.PrintRune(rune(32))
-	z01.PrintRune(rune(87))
-	z01.PrintRune(rune(111))
-	z01.PrintRune(rune(114))
-	z01.PrintRune(rune(108))
-	z01.PrintRune(rune(100))
-	z01.PrintRune(rune(33))
+	z01.PrintRune(rune(s[0]))
+	z01.PrintRune(rune(s[1]))
+	z01.PrintRune(rune(s[2]))
+	z01.PrintRune(rune(s[3]))
+	z01.PrintRune(rune(s[4]))
+	z01.PrintRune(rune(s[5]))
+	z01.PrintRune(rune(s[6]))
+	z01.PrintRune(rune(s[7]))
+	z01.PrintRune(rune(s[8]))
+	z01.PrintRune(rune(s[9]))
+	z01.PrintRune(rune(s[10]))
+	z01.PrintRune(rune(s[11]))
 }
