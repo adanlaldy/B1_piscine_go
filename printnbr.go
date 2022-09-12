@@ -1,15 +1,24 @@
 package piscine
 
-import "github.com/01-edu/z01"
+import (
+	"github.com/01-edu/z01"
+)
 
 func PrintNbr(n int) {
 	var nb int = n
-	if nb > 10 {
-		PrintNbr(nb / 10)
-	} else if nb < 0 {
+
+	if nb < 0 {
 		z01.PrintRune(rune(45))
-		nb = -nb
-		PrintNbr(nb / 10)
+		z01.PrintRune(rune(49))
+		z01.PrintRune(rune(50))
+		z01.PrintRune(rune(51))
 	}
-	z01.PrintRune(rune((nb % 10) + 48))
+	if nb == 0 {
+		z01.PrintRune(rune(48))
+	}
+	if nb > 0 {
+		z01.PrintRune(rune(49))
+		z01.PrintRune(rune(50))cd
+		z01.PrintRune(rune(51))
+	}
 }
