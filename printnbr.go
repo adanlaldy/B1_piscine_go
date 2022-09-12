@@ -1,24 +1,37 @@
 package piscine
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
-	var nb int = n
-
-	if nb < 0 {
+	if n == -9223372036854775808 {
+		z01.PrintRune('-')
+		z01.PrintRune('9')
+		z01.PrintRune('2')
+		z01.PrintRune('2')
+		z01.PrintRune('3')
+		z01.PrintRune('6')
+		z01.PrintRune('7')
+		z01.PrintRune('2')
+		z01.PrintRune('0')
+		z01.PrintRune('3')
+		z01.PrintRune('6')
+		z01.PrintRune('8')
+		z01.PrintRune('5')
+		z01.PrintRune('4')
+		z01.PrintRune('7')
+		z01.PrintRune('7')
+		z01.PrintRune('5')
+		z01.PrintRune('8')
+		z01.PrintRune('0')
+		z01.PrintRune('8')
+		return
+	}
+	if n > 10 {
+		PrintNbr(n / 10)
+	} else if n < 0 {
 		z01.PrintRune(rune(45))
-		z01.PrintRune(rune(49))
-		z01.PrintRune(rune(50))
-		z01.PrintRune(rune(51))
+		n = -n
+		PrintNbr(n / 10)
 	}
-	if nb == 0 {
-		z01.PrintRune(rune(48))
-	}
-	if nb > 0 {
-		z01.PrintRune(rune(49))
-		z01.PrintRune(rune(50))
-		z01.PrintRune(rune(51))
-	}
+	z01.PrintRune(rune((n % 10) + 48))
 }
