@@ -3,6 +3,9 @@ package piscine
 func Atoi(s string) int {
 	a := 0
 	b := 1
+	if len(s) == 0 {
+		return 0
+	}
 	if int(s[0]) == 45 {
 		b = -1
 	}
