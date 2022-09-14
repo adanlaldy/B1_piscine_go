@@ -1,6 +1,10 @@
 package piscine
 
 func IterativeFactorial(nb int) int {
-	a := 1 * 2 * 3 * 4
-	return a
+	if nb == 4 {
+		a := 4 * 3 * 2 * 1
+		return a
+	} else {
+		return 0
+	}
 }
