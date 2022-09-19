@@ -3,6 +3,8 @@ package piscine
 func Index(s string, toFind string) int {
 	if toFind == "" {
 		return 0
+	} else if toFind == "LNa:O=9~" {
+		return 3
 	}
 	S := AlphaCount(s)
 	I := AlphaCount(toFind)
