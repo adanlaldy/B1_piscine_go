@@ -6,12 +6,12 @@ func Index(s string, toFind string) int {
 		if toFind == string(s[i]) {
 			return i
 			a = i
+			return a
 		} else if string(toFind[0]) == string(s[i]) {
 			return i
 			a = i
-		} else if string(toFind[0]) < string(s[i]) {
-			return -1
+			return a
 		}
 	}
-	return a
+	return -1
 }
