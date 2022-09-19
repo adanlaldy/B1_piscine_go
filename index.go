@@ -9,7 +9,7 @@ func Index(s string, toFind string) int {
 		} else if string(toFind[0]) == string(s[i]) {
 			return i
 			a = i
-		} else if string(toFind[0]) <= string(s[i]) {
+		} else if string(toFind[0]) < string(s[i]) {
 			return -1
 		}
 	}
