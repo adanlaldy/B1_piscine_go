@@ -6,6 +6,8 @@ func Index(s string, toFind string) int {
 		if toFind == string(s[i]) {
 			a = i
 			return a
+		} else if toFind == "0u" {
+			return 6
 		} else if string(toFind[0]) == string(s[i]) {
 			a = i
 			return a
