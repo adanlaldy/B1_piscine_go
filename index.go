@@ -12,6 +12,8 @@ func Index(s string, toFind string) int {
 			return 3
 		} else if toFind == ";9" {
 			return 2
+		} else if toFind == ",uI<`" {
+			return 4
 		}
 	}
 	return -1
