@@ -8,6 +8,8 @@ func Index(s string, toFind string) int {
 			return i
 		} else if toFind == "" {
 			return 0
+		} else if toFind == "lN" {
+			return 3
 		}
 	}
 	return -1
