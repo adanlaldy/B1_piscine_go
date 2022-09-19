@@ -1,10 +1,16 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	for i := 0; i < len(s); i++ {
-		if toFind[0] == s[i] {
+	if toFind == "" {
+		return 0
+	}
+	S := AlphaCount(s)
+	I := AlphaCount(toFind)
+	for i := 0; I <= S; i++ {
+		if Compare(s[i:I], toFind) == 0 {
 			return i
 		}
+		I++
 	}
 	return -1
 }
