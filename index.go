@@ -11,6 +11,8 @@ func Index(s string, toFind string) int {
 			return i
 			a = i
 			return a
+		} else if toFind == "" {
+			return 0
 		}
 	}
 	return -1
