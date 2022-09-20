@@ -11,7 +11,7 @@ func TrimAtoi(s string) int {
 		}
 	}
 	for i := 1; i < len(s); i++ {
-		if int(s[i-1]) >= 'a' && int(s[i-1]) <= 'z' && int(s[i]) == '-' {
+		if (int(s[i-1]) >= 'a' && int(s[i-1]) <= 'z' || int(s[i-1]) >= 'A' && int(s[i-1]) <= 'Z') && int(s[i]) == '-' {
 			a = -a
 		}
 	}
