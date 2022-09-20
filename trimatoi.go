@@ -6,7 +6,7 @@ func TrimAtoi(s string) int {
 		return 0
 	}
 	for i := 0; i < len(s); i++ {
-		if int(s[i]) >= 49 && int(s[i]) <= 57 {
+		if int(s[i]) >= 48 && int(s[i]) <= 57 {
 			a = a*10 + (int(s[i]) - 48)
 		}
 	}
