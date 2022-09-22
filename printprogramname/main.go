@@ -1,11 +1,14 @@
 package main
 
 import (
-	"fmt"
+	"github.com/01-edu/z01"
 	"os"
 )
 
 func main() {
-	args := os.Args
-	fmt.Printf(args[0])
+	slice := []rune(os.Args[0])[2:]
+	for i := 0; i < len(slice); i++ {
+		z01.PrintRune(rune(slice[i]))
+	}
+	z01.PrintRune('\n')
 }
