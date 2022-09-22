@@ -10,4 +10,5 @@ func main() {
 	for i := 0; i < len(slice); i++ {
 		z01.PrintRune(rune(slice[i]))
 	}
+	z01.PrintRune('\n')
 }
