@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	slice := []rune(os.Args[1])
+	slice := []rune(os.Args[1:])
 	for i := 0; i < len(slice); i++ {
 		z01.PrintRune(rune(slice[i]))
 	}
