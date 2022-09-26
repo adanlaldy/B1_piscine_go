@@ -7,5 +7,5 @@ import (
 
 func main() {
 	fmt.Println(piscine.MakeRange(5, 10))
-	fmt.Println(piscine.MakeRange(10, 8))
+	fmt.Println(piscine.MakeRange(8, 8))
 }
