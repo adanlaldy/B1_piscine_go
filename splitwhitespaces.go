@@ -4,7 +4,7 @@ func SplitWhiteSpaces(s string) []string {
 	slice := []string{}
 	char := ""
 	for i := 0; i < len(s); i++ {
-		if s[i] == 32 || s[i] == 10 || s[i] == 9 {
+		if s[i] == ' ' || s[i] == '\t' || s[i] == '\n' {
 			slice = append(slice, char)
 			char = ""
 		} else {
