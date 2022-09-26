@@ -1,7 +1,7 @@
 package piscine
 
 func MakeRange(min, max int) []int {
-	sliceempty := []int{}
+	sliceempty := []int{0}
 	if min >= max {
 		return sliceempty
 	}
