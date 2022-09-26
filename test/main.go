@@ -1,9 +1,11 @@
 package main
 
-import "piscine"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-	piscine.IsNegative(1)
-	piscine.IsNegative(0)
-	piscine.IsNegative(-1)
+	fmt.Println(piscine.AppendRange(5, 10))
+	fmt.Println(piscine.AppendRange(10, 5))
 }
