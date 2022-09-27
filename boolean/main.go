@@ -2,7 +2,7 @@ package main
 
 import (
 	"os"
-	
+
 	"github.com/01-edu/z01"
 )
 
@@ -12,6 +12,7 @@ func printStr(s string) {
 	}
 	z01.PrintRune('\n')
 }
+
 func isEven(nbr int) bool {
 	if nbr%2 == 0 {
 		return true
@@ -19,6 +20,7 @@ func isEven(nbr int) bool {
 		return false
 	}
 }
+
 func main() {
 	if isEven(len(os.Args)) {
 		printStr("I have an odd number of arguments")
