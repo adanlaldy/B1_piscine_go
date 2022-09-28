@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	a1 := []string{"Hello", "how", "are", "you"}
+	a1 := []string{"vvdxfurouljpi", "pkzgqtamvdrpc", "tweazhmacreri", "suycfotslpvnt", "bkalcjbwiqfff", "gvpktmafylsfq", "vmzqihhekcjjo", "pxobfdjonglyi"}
 	a2 := []string{"This", "is", "4", "you"}
 
 	result1 := piscine.Any(piscine.IsNumeric, a1)
