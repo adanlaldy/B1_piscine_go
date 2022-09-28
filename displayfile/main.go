@@ -10,7 +10,7 @@ func main() {
 		fmt.Println("File name missing")
 		return
 	} else if len(os.Args) > 2 {
-		fmt.Printf("Too many arguments")
+		fmt.Println("Too many arguments")
 	} else {
 		a, _ := os.ReadFile("quest8.txt")
 		fmt.Printf(string(a))
