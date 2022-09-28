@@ -1,17 +1,18 @@
 package main
 
 import (
+	"fmt"
 	"os"
 )
 
 func main() {
 	if len(os.Args) == 1 {
-		print("File name missing")
+		fmt.Printf("File name missing")
 		return
 	} else if len(os.Args) > 2 {
-		print("Too many arguments")
+		fmt.Printf("Too many arguments")
 	} else {
 		a, _ := os.ReadFile("quest8.txt")
-		print(string(a))
+		fmt.Printf(string(a))
 	}
 }
