@@ -2,13 +2,12 @@ package piscine
 
 func Any(f func(string) bool, a []string) bool {
 	var b bool
+	var c bool
 	for i := 0; i < len(a); i++ {
-		if a[i] == "1" || a[i] == "0" || a[i] == "1" || a[i] == "2" || a[i] == "3" || a[i] == "4" || a[i] == "5" || a[i] == "6" || a[i] == "7" || a[i] == "8" || a[i] == "9" {
-			return true
-		} else if !(a[i] == "1" || a[i] == "0" || a[i] == "1" || a[i] == "2" || a[i] == "3" || a[i] == "4" || a[i] == "5" || a[i] == "6" || a[i] == "7" || a[i] == "8" || a[i] == "9") {
-			continue
-		} else {
-			return false
+		b = IsNumeric(a[i])
+		if IsNumeric(a[i]) == true {
+			c = IsNumeric(a[i])
+			return c
 		}
 	}
 	return b
