@@ -6,15 +6,10 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 		if f(a[i], a[i+1]) == 1 {
 			exit = true
 		}
-		if f(a[i], a[i+1]) == 1 {
-			return exit
-		}
-	}
-	for j := 0; j < len(a)-1; j++ {
-		if f(a[j], a[j+1]) == -1 {
-			exit = true
-		} else {
-			exit = false
+		for j := 0; j < len(a)-1; j++ {
+			if f(a[j], a[j+1]) == -1 {
+				exit = true
+			}
 		}
 	}
 	return exit
