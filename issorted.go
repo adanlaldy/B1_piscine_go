@@ -17,5 +17,10 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 			break
 		}
 	}
+	for k := 0; k < len(a)-1; k++ {
+		if int(a[k]) < int(a[k+1]) {
+			return c
+		}
+	}
 	return c
 }
