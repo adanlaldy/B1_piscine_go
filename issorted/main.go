@@ -19,7 +19,7 @@ func f(a, b int) int {
 }
 
 func main() {
-	a1 := []int{6, 5, 5, 3, 2, 1}
+	a1 := []int{0}
 	a2 := []int{1, 2, 3, 4, 5, 6}
 
 	result1 := piscine.IsSorted(f, a1)
