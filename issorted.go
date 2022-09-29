@@ -2,7 +2,6 @@ package piscine
 
 func IsSorted(f func(a, b int) int, a []int) bool {
 	var exit bool
-	//decroissant
 	for i := 1; i < len(a); i++ {
 		if f(a[i-1], a[i]) >= 0 {
 			exit = true
