@@ -6,20 +6,20 @@ import (
 )
 
 func f(a, b int) int {
-	exit := 0
+	vr := 0
 	if a > b {
-		exit = 1
+		vr = 1
 	} else if a == b {
-		exit = 0
-	} else {
-		exit = -1
+		vr = 0
+	} else if a < b {
+		vr = -1
 	}
-	return exit
+	return vr
 }
 
 func main() {
-	a1 := []int{694269, 638844, 579652, 409813, -144530, -410537, -639118, -972120}
-	a2 := []int{0, 2, 1, 3}
+	a1 := []int{1, 3, 2}
+	a2 := []int{-952730, -920742, -613126, -446098, 16800, 331325, 415212, 571045}
 
 	result1 := piscine.IsSorted(f, a1)
 	result2 := piscine.IsSorted(f, a2)
